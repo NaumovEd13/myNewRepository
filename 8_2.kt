@@ -36,7 +36,8 @@ suspend fun main(args: Array<String>) {
     println("Животные поели")
     delay(5000)
 
-    coroutineScope {
+
+    var startEat=GlobalScope.async {
         launch {
             cat.eat()
         }
@@ -52,8 +53,9 @@ suspend fun main(args: Array<String>) {
         launch {
             bird.eat()
         }
-        println("Еду раздали")
     }
+    println("Еду раздали")
+    startEat.await()
     println("Животные поели")
 
 
