@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class TrafficController {
     public AtomicInteger leftCar=new AtomicInteger(0);
     public AtomicInteger rightCar=new AtomicInteger(0);
-    public synchronized void enterLeft() {
+    public  void enterLeft() {
         while(rightCar.get()!=0){
             try {
                 Thread.sleep(1);
@@ -17,7 +17,7 @@ public class TrafficController {
         leftCar.incrementAndGet();
     }
 
-    public synchronized void enterRight() {
+    public  void enterRight() {
         while(leftCar.get()!=0){
             try {
                 Thread.sleep(1);
