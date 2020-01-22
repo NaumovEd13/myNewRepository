@@ -1,18 +1,15 @@
 package chat;
 
-import org.springframework.stereotype.Component;
-
 import javax.persistence.*;
 import java.util.Date;
 
 @Table(name = "Messages", indexes = {@Index(columnList = "id")})
 @Entity
-@Component
 public class ModelOfMessages {
     @Column
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
-    int id;
+    long id;
     @Column
     String authorOfMessage;
     @Column
@@ -21,6 +18,8 @@ public class ModelOfMessages {
     String message;
     @Column
     Date dateOfMessage;
+    @Column
+    Boolean isClosed=false;
 
     public ModelOfMessages() {
 
@@ -31,6 +30,10 @@ public class ModelOfMessages {
         this.receiverOfMessage = receiverOfMessage;
         this.message = message;
         this.dateOfMessage=dateOfMessage;
+    }
+
+    public void setIsClosed(){
+        isClosed=true;
     }
 
     @Override
