@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SeleniumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-27T06:00:20" hostname="rzndev147" time="15.292">
+  <properties/>
+  <testcase name="test()" classname="SeleniumTest" time="15.292"/>
+  <system-out><![CDATA[09:00:23.062 [Test worker] DEBUG io.github.bonigarcia.wdm.Preferences - Preference found chrome80=80.0.3987.106 (valid until 2020-03-27 15:23:19)
+09:00:23.062 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 80.0.3987.106 (since Google Chrome 80 is installed in your machine)
+09:00:23.078 [Test worker] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 80.0.3987.106 found in cache
+09:00:23.078 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\e.o.naumov\.m2\repository\webdriver\chromedriver\win32\80.0.3987.106\chromedriver.exe
+Тест начался
+Тест закончился
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}) on port 42004
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+мар 27, 2020 9:00:26 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1585288827.813][SEVERE]: Timed out receiving message from renderer: 0.100
+[1585288827.914][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+</testsuite>
